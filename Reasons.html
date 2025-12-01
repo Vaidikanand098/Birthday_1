@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(#e9d7ff, #f7ecff);
+      overflow-x: hidden;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    body.fade-in {
+      opacity: 1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      color: #a678e2;
+      font-size: 3rem;
+      text-shadow: 0 0 20px rgba(166, 120, 226, 0.5);
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+   .image-box {
+  width: 100%;
+  max-width: 500px;   /* limits width for large screens */
+  margin: 30px auto;  /* centers the image box */
+  background: white;
+  padding: 15px;      /* slightly smaller padding */
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(180, 140, 255, 0.4);
+  position: relative;
+  animation: glow 3s infinite alternate;
+}
+
+.image-box img {
+  width: 100%;
+  max-height: 280px;  /* compact height */
+  object-fit: cover;  /* ensures images don’t stretch */
+  border-radius: 20px;
+    }
+
+    .msg {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #9158d8;
+    }
+
+    /* Sparkles */
+    .sparkle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 12px white;
+      animation: sparkleMove 2s infinite ease-in-out;
+    }
+
+    @keyframes sparkleMove {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-40px) scale(0); opacity: 0; }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 15px rgba(180, 140, 255, 0.4); }
+      100% { box-shadow: 0 0 30px rgba(180, 140, 255, 0.9); }
+    }
+
+    /* Letter & Reasons Box */
+    .letter-box {
+      background: #ffffffcc;
+      padding: 40px;
+      border-radius: 20px;
+      margin-top: 60px;
+      box-shadow: 0 0 20px rgba(150, 120, 220, 0.4);
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      color: #764ab8;
+      backdrop-filter: blur(5px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Reasons List */
+    .letter-box ol li {
+      margin-bottom: 10px;
+    }
+
+    /* Sparkles inside letter/reasons */
+    .letter-box .sparkle-small {
+      width: 8px;
+      height: 8px;
+      box-shadow: 0 0 8px white;
+    }
+
+    h2 {
+      text-align: center;
+      color: #a678e2;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body onload="document.body.classList.add('fade-in')">
+
+  <h1>A Small Surprise That Starts the Best 15 💜✨</h1>
+
+  <div class="container">
+
+    <!-- IMAGE 1 -->
+    <div class="image-box">
+      <img src="i1.jpg" alt="Image 1">
+      <div class="msg">You look magical here — soft, aesthetic and glowing just like pastel sunrise 💜✨</div>
+      <div class="sparkle" style="top:10px; left:20px"></div>
+      <div class="sparkle" style="top:50px; left:80%"></div>
+      <div class="sparkle" style="top:120px; left:40%"></div>
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="image-box">
+      <img src="i2.jpg" alt="Image 2">
+      <div class="msg">This one feels warm… like a memory that stays even when the world gets busy 🌙💫</div>
+      <div class="sparkle" style="top:20px; left:10%"></div>
+      <div class="sparkle" style="top:90px; left:70%"></div>
+    </div>
+
+    <!-- IMAGE 3 -->
+    <div class="image-box">
+      <img src="i3.jpg" alt="Image 3">
+      <div class="msg">Pastel, peaceful and soft — just like the vibe you unknowingly carry everywhere 💐💜</div>
+      <div class="sparkle" style="top:30px; left:30%"></div>
+      <div class="sparkle" style="top:140px; left:60%"></div>
+    </div>
+
+    <!-- Birthday Letter -->
+    <div class="letter-box">
+      Dear Diya 💜,<br><br>
+      Happy 15th Birthday to my one and only Madam ji — the cutest, softest, most unintentionally aesthetic person alive.<br><br>
+      You deserve a year filled with warmth, laughter, and moments that feel like pastel sunsets. You might not always realise it, but you make everything around you brighter — like a gentle glow that never tries too hard but somehow makes everything better.<br><br>
+      I hope this year brings you peace, confidence, and happiness that stays. And I hope every small surprise today makes you smile the way you make the world look a little softer.<br><br>
+      💜✨ Here's to your new chapter, your new 15, and all the magic you're yet to create.
+      <br><br>
+      — from someone who thinks you're genuinely special.
+      <!-- Sparkles in letter -->
+      <div class="sparkle sparkle-small" style="top:10px; left:5%"></div>
+      <div class="sparkle sparkle-small" style="top:50px; left:90%"></div>
+      <div class="sparkle sparkle-small" style="top:200px; left:40%"></div>
+    </div>
+
+    <!-- 15 Reasons Section -->
+    <div class="letter-box">
+      <h2>15 Reasons Why You're Amazing 💫</h2>
+      <ol>
+        <li>Your smile can brighten even the dullest day.</li>
+        <li>You have an amazing sense of style that’s effortlessly aesthetic.</li>
+        <li>Your kindness makes everyone around you feel valued.</li>
+        <li>You’re incredibly creative and full of ideas.</li>
+        <li>Your laughter is contagious and warms hearts.</li>
+        <li>You always know how to make people feel special.</li>
+        <li>You’re brave enough to be yourself in every situation.</li>
+        <li>Your curiosity and love for learning are inspiring.</li>
+        <li>You’re thoughtful and notice the little things that matter.</li>
+        <li>Your presence makes every moment more fun.</li>
+        <li>You’re honest and genuine, which is rare and beautiful.</li>
+        <li>You have a unique way of seeing the world positively.</li>
+        <li>You lift others up with your words and actions.</li>
+        <li>Your patience and calmness make people feel safe around you.</li>
+        <li>You’re simply unforgettable — in the best way possible 💜✨</li>
+      </ol>
+      <!-- Sparkles for 15 reasons -->
+      <div class="sparkle sparkle-small" style="top:10px; left:10%"></div>
+      <div class="sparkle sparkle-small" style="top:150px; left:80%"></div>
+      <div class="sparkle sparkle-small" style="top:250px; left:40%"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
